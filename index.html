@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employee Form</title>
+  <style>
+    body{
+        background: black;
+        color: white;
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        margin: 20px;
+        margin-right: 20px;
+    }
+    .name{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    :hover #name{
+        background: rgb(95, 209, 224);
+    }
+    :hover #profession{
+        background: rgb(95, 209, 224);
+    }
+    :hover #age{
+        background: rgb(95, 209, 224);
+    }
+    :hover #btn{
+        background: rgb(16, 134, 155);
+    }
+    .profe{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .age{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .success {
+      color: green;
+    }
+    
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h3>New Employees</h3>
+  
+  <form id="employeeForm">
+    <div class="container">
+        <div class="name">
+    <label for="name">Enter Name:</label>
+    <input type="text" id="name" required><br>
+    </div>
+    <div class="profe">
+    <label for="profession" id="prof">Enter Profession:</label>
+    <input type="text" id="profession" required><br>
+</div>
+    <div class="age">
+    <label for="age" id="ag">Enter Age:</label>
+    <input type="number" id="age" required><br><br>
+</div>
+</div>
+    <button type="submit" id="btn">Add User</button>
+  </form>
+  
+  <h2>Added Employees:</h2>
+  <div id="addedEmployees"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
